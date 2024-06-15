@@ -5,9 +5,9 @@ export default function Root() {
   return (
     <>
       <NavBar />
-      <div className="p-3">
+      <main className="p-3 w-full text-center">
         <Outlet />
-      </div>
+      </main>
     </>
   );
 }
