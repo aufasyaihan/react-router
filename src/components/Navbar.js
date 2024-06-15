@@ -9,7 +9,7 @@ export default function NavBar() {
       <ul className="flex gap-2 w-full justify-center">
         <li>
           <NavLink
-            to={"/"}
+            to={""}
             className={({ isActive }) =>
               isActive ? "border-b-[2.5px] border-b-amber-300 pb-[2px]" : "group"
             }
@@ -21,7 +21,7 @@ export default function NavBar() {
         </li>
         <li>
           <NavLink
-            to={"/products"}
+            to={"products"}
             className={({ isActive }) =>
               isActive ? "border-b-[2.5px] border-b-amber-300 pb-[2px]" : "group"
             }
