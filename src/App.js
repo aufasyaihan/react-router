@@ -25,8 +25,8 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "", element: <HomePage /> },// relative path = "", absolute path = "/" (starts with "/")
-      { path: "products", element: <ProductsPage /> },
+      { index: true, element: <HomePage /> }, // default route
+      { path: "products", element: <ProductsPage /> }, // relative path = "", absolute path = "/" (starts with "/")
       { path: "products/:productId", element: <ProductDetail /> },
       
     ],
